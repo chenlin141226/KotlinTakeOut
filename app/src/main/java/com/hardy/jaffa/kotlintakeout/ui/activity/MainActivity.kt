@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //判断设备是否有虚拟按键，如果有加padingBottom-50dp
-        if(CheckNavigationBar.checkDeviceHasNavigationBar(this)){
+        if(!CheckNavigationBar.checkDeviceHasNavigationBar(this)){
              ll_main_activity.setPadding(0,0,0,50.dp2px())
         }
         initBottomBar()
